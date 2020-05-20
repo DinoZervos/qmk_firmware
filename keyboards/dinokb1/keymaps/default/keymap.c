@@ -19,9 +19,10 @@
 #define BASE  0 // default layer
 #define NUM   1 // Number pad
 #define MOUSE 2 // Mouse and media keys
-#define HOME  3 // Home row computing
+#define SFN   3 // Space Fn
 #define PROG  4 // Programming symbols
 #define MAC   5 // Mac layer
+#define MSFN  6 // Mac Space Fn
 //#define VSWIN 4 // Window navigation/manipulation for Visual studio
 
 // enum custom_keycodes {
@@ -41,12 +42,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_LSPO,      KC_Z,    KC_X,    KC_C,  KC_V, KC_B,            \
   KC_LCTL,      KC_LGUI, KC_LALT, LT(PROG, KC_SPC),             \
   /* Right side */
-                         KC_F5,   KC_F6,  KC_F7, KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  \
-                         KC_6,    KC_7,   KC_8,  KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC, \
-                         KC_Y,    KC_U,   KC_I,  KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, \
-                         KC_H,    KC_J,   KC_K,  KC_L,    KC_SCLN, KC_QUOT, KC_ENT,           \
-  MT(MOD_RCTL, KC_APP),  KC_N,    KC_M,          KC_COMM, KC_DOT,  KC_SLSH,          KC_RSPC, \
-  LT(HOME, KC_SPC),      KC_RALT, KC_APP, KC_NO, KC_NO,   KC_RCTL, \
+                         KC_F5,   KC_F6,  KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  \
+                         KC_6,    KC_7,   KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSPC, \
+                         KC_Y,    KC_U,   KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, \
+                         KC_H,    KC_J,   KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_ENT,           \
+  MT(MOD_RCTL, KC_APP),  KC_N,    KC_M,            KC_COMM, KC_DOT,  KC_SLSH,          KC_RSPC, \
+  LT(SFN, KC_SPC),       KC_RALT, KC_APP, TG(MAC), KC_NO,   KC_RCTL, \
   /* Number pad */
   KC_PSCR, KC_SLCK, KC_PAUS,          \
   TG(NUM), KC_PSLS, KC_PAST, KC_PMNS, \
@@ -101,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_BTN1, KC_MS_U, KC_BTN2,          \
   KC_MS_L, KC_MS_D, KC_MS_R, KC_TRNS  \
 ),
-[HOME] = LAYOUT( /* Home row computing */
+[SFN] = LAYOUT( /* Space Fn */
   /* Left side */
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                      \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, \
@@ -156,12 +157,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
   KC_LGUI, KC_TRNS, KC_LGUI, KC_TRNS,                            \
   /* Right side */
-           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
+                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+                    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
+  LT(MSFN, KC_SPC), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,           \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
@@ -169,6 +170,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
   KC_TRNS, KC_TRNS, KC_TRNS,           \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS   \
+),
+[MSFN] = LAYOUT( /* Mac Space Fn */
+  /* Left side */
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,                          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,         KC_TRNS, KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS, LGUI(KC_E), LGUI(KC_SPC), KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_F11,     KC_TRNS,      KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,         KC_TRNS,          \
+  KC_LALT, KC_TRNS, KC_LGUI, KC_TRNS,                                    \
+  /* Right side */
+            KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_INS,  KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_HOME, KC_LEFT, KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
+  KC_TRNS,  KC_DEL,  KC_TRNS, KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
+  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,                    KC_TRNS,             \
+  /* Number pad */
+  KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS  \
 ),
 };
 
