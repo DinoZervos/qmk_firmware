@@ -21,6 +21,7 @@
 #define MOUSE 2 // Mouse and media keys
 #define HOME  3 // Home row computing
 #define PROG  4 // Programming symbols
+#define MAC   5 // Mac layer
 //#define VSWIN 4 // Window navigation/manipulation for Visual studio
 
 // enum custom_keycodes {
@@ -138,6 +139,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            KC_TRNS, KC_TRNS, KC_LCBR, KC_RCBR, KC_MINS, KC_PLUS, KC_EQL,           \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_LBRC, KC_RBRC, KC_TRNS,          KC_TRNS,          \
   KC_UNDS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
+  /* Number pad */
+  KC_TRNS, KC_TRNS, KC_TRNS,           \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
+  KC_TRNS, KC_TRNS, KC_TRNS,           \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
+  KC_TRNS, KC_TRNS, KC_TRNS,           \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS   \
+),
+[MAC] = LAYOUT( /* Apple Mac */
+  /* Left side */
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_CAPS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_LGUI, KC_TRNS, KC_LGUI, KC_TRNS,                            \
+  /* Right side */
+           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,           \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
