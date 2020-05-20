@@ -162,7 +162,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
   KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
-  LT(MSFN, KC_SPC), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
+  LT(MSFN, KC_SPC), KC_RGUI, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,           \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
