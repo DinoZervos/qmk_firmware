@@ -1,5 +1,5 @@
 /* Copyright 2017 Konstantinos Zervos
- * Version 6.0.1
+ * Version 6.1.1
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -104,12 +104,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [SFN] = LAYOUT( /* Space Fn */
   /* Left side */
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                      \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS, LGUI(KC_E), LGUI(KC_R), KC_TRNS,       \
-  KC_CAPS, KC_TRNS, KC_TRNS, LGUI(KC_D), KC_TRNS, KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,             \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                               \
+  KC_TRNS, KC_TRNS,     KC_TRNS,      KC_TRNS,    KC_TRNS,                        \
+  KC_TRNS, KC_TRNS,     KC_TRNS,      KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
+  KC_TRNS, RALT(KC_F4), RCTRL(KC_F4), LGUI(KC_E), LGUI(KC_R),   KC_TRNS,          \
+  KC_CAPS, KC_TRNS,     KC_TRNS,      LGUI(KC_D), RCTRL(KC_F),  KC_TRNS,          \
+  KC_TRNS, RCTRL(Z),    RCTRL(X),     RCTRL(C),   RCTRL(v),     KC_TRNS,          \
+  KC_TRNS, KC_TRNS,     KC_TRNS,      KC_TRNS,                                    \
   /* Right side */
             KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
             KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
