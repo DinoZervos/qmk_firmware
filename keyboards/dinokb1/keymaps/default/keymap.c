@@ -1,5 +1,4 @@
 /* Copyright 2017 Konstantinos Zervos
- * Version 6.1.1
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -108,14 +107,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   RALT(KC_TAB), KC_TRNS,     KC_TRNS,      KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
   KC_TRNS,      RALT(KC_F4), RCTL(KC_F4),  LGUI(KC_E), LGUI(KC_R),   KC_TRNS,          \
   KC_CAPS,      KC_TRNS,     KC_TRNS,      LGUI(KC_D), RCTL(KC_F),   KC_TRNS,          \
-  KC_TRNS,      RCTL(Z),     RCTL(X),      RCTL(C),    RCTL(v),      KC_TRNS,          \
+  KC_TRNS,      RCTL(KC_Z),  RCTL(KC_X),   RCTL(KC_C), RCTL(KC_V),   KC_TRNS,          \
   KC_TRNS,      KC_TRNS,     KC_TRNS,      KC_TRNS,                                    \
   /* Right side */
-            KC_TRNS, KC_TRNS,        KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_TRNS,        KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_INS,         KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_HOME, KC_LEFT,        KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
-  KC_TRNS,  KC_DEL,  LCTL(LSFT(L)),  KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
+            KC_TRNS, KC_TRNS,           KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_TRNS,           KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_INS,            KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_HOME, KC_LEFT,           KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
+  KC_TRNS,  KC_DEL,  LCTL(LSFT(KC_L)),  KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
   KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,                    KC_TRNS,             \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,          \
