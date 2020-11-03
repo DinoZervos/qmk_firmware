@@ -111,11 +111,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS,      RCTL(KC_Z),  RCTL(KC_X),   RCTL(KC_C), RCTL(KC_V),   KC_TRNS,          \
   KC_TRNS,      KC_TRNS,     KC_TRNS,      KC_TRNS,                                    \
   /* Right side */
-            KC_TRNS, KC_TRNS,        KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_TRNS,        KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_INS,         KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_HOME, KC_LEFT,        KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
-  KC_TRNS,  KC_DEL,  LCTL(LSFT(L)),  KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
+            KC_TRNS, KC_TRNS,           KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_TRNS,           KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_INS,            KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_HOME, KC_LEFT,           KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
+  KC_TRNS,  KC_DEL,  LCTL(LSFT(KC_L)),  KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
   KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,                    KC_TRNS,             \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,          \
