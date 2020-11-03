@@ -172,12 +172,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [MSFN] = LAYOUT( /* Mac Space Fn */
   /* Left side */
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,                        \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
-  KC_TRNS, LGUI(Q), LGUI(W), LGUI(KC_E), LGUI(KC_SPC), KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_F11,     KC_TRNS,      KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,      KC_TRNS,          \
-  KC_LALT, KC_TRNS, KC_LGUI, KC_TRNS,                                    \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                        \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
+  KC_TRNS, LGUI(KC_Q), LGUI(KC_W), LGUI(KC_E), LGUI(KC_SPC), KC_TRNS,          \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_F11,     KC_TRNS,      KC_TRNS,          \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,      KC_TRNS,          \
+  KC_LALT, KC_TRNS,    KC_LGUI,    KC_TRNS,                                    \
   /* Right side */
             KC_TRNS, KC_TRNS,      KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
             KC_TRNS, KC_TRNS,      KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
