@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                          KC_Y,    KC_U,   KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, \
                          KC_H,    KC_J,   KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_ENT,           \
   MT(MOD_RCTL, KC_APP),  KC_N,    KC_M,            KC_COMM, KC_DOT,  KC_SLSH,          KC_RSPC, \
-  LT(SFN, KC_SPC),       KC_RALT, KC_APP, TG(MAC), KC_NO,   KC_RCTL, \
+  LT(SFN, KC_SPC),       KC_RALT, KC_APP, TG(MAC), KC_CALC, KC_RCTL, \
   /* Number pad */
   KC_PSCR, KC_SLCK, KC_PAUS,          \
   TG(NUM), KC_PSLS, KC_PAST, KC_PMNS, \
@@ -104,18 +104,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [SFN] = LAYOUT( /* Space Fn */
   /* Left side */
-  KC_TRNS, KC_TRNS,     KC_TRNS,      KC_TRNS,    KC_TRNS,                        \
-  KC_TRNS, KC_TRNS,     KC_TRNS,      KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
-  KC_TRNS, RALT(KC_F4), RCTRL(KC_F4), LGUI(KC_E), LGUI(KC_R),   KC_TRNS,          \
-  KC_CAPS, KC_TRNS,     KC_TRNS,      LGUI(KC_D), RCTRL(KC_F),  KC_TRNS,          \
-  KC_TRNS, RCTRL(Z),    RCTRL(X),     RCTRL(C),   RCTRL(v),     KC_TRNS,          \
-  KC_TRNS, KC_TRNS,     KC_TRNS,      KC_TRNS,                                    \
+  KC_TRNS,      KC_TRNS,     KC_TRNS,      KC_TRNS,    KC_TRNS,                        \
+  RALT(KC_TAB), KC_TRNS,     KC_TRNS,      KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
+  KC_TRNS,      RALT(KC_F4), RCTL(KC_F4),  LGUI(KC_E), LGUI(KC_R),   KC_TRNS,          \
+  KC_CAPS,      KC_TRNS,     KC_TRNS,      LGUI(KC_D), RCTL(KC_F),   KC_TRNS,          \
+  KC_TRNS,      RCTL(Z),     RCTL(X),      RCTL(C),    RCTL(v),      KC_TRNS,          \
+  KC_TRNS,      KC_TRNS,     KC_TRNS,      KC_TRNS,                                    \
   /* Right side */
-            KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_INS,  KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_HOME, KC_LEFT, KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
-  KC_TRNS,  KC_DEL,  KC_TRNS, KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
+            KC_TRNS, KC_TRNS,        KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_TRNS,        KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_INS,         KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_HOME, KC_LEFT,        KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
+  KC_TRNS,  KC_DEL,  LCTL(LSFT(L)),  KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
   KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,                    KC_TRNS,             \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,          \
@@ -136,9 +136,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* Right side */
            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-           KC_TRNS, KC_TRNS, KC_LPRN, KC_RPRN, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-           KC_TRNS, KC_TRNS, KC_LCBR, KC_RCBR, KC_MINS, KC_PLUS, KC_EQL,           \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_LBRC, KC_RBRC, KC_TRNS,          KC_TRNS,          \
+           KC_TRNS, KC_TRNS, KC_LCBR, KC_RCBR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+           KC_TRNS, KC_TRNS, KC_LBRC, KC_RBRC, KC_TRNS, KC_BSLS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
   KC_UNDS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,           \
@@ -150,18 +150,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [MAC] = LAYOUT( /* Apple Mac */
   /* Left side */
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_CAPS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_LGUI, KC_TRNS, KC_LGUI, KC_TRNS,                            \
+  KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS,          KC_TRNS,                   \
+  KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, \
+  KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,          \
+  KC_CAPS, KC_TRNS,      KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS,      KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,          \
+  KC_LGUI, LGUI(KC_SPC), KC_LGUI, LT(PROG, KC_SPC),                            \
   /* Right side */
                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
+  KC_LGUI,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
   LT(MSFN, KC_SPC), KC_RGUI, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,           \
@@ -173,11 +173,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [MSFN] = LAYOUT( /* Mac Space Fn */
   /* Left side */
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,                          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,         KC_TRNS, KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,                        \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS, LGUI(KC_E), LGUI(KC_SPC), KC_TRNS,          \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_F11,     KC_TRNS,      KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,         KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,      KC_TRNS,          \
   KC_LALT, KC_TRNS, KC_LGUI, KC_TRNS,                                    \
   /* Right side */
             KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
