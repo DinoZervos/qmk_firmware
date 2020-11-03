@@ -172,18 +172,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [MSFN] = LAYOUT( /* Mac Space Fn */
   /* Left side */
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,                        \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS, LGUI(KC_E), LGUI(KC_SPC), KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_F11,     KC_TRNS,      KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,      KC_TRNS,          \
-  KC_LALT, KC_TRNS, KC_LGUI, KC_TRNS,                                    \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,                        \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,      KC_TRNS, KC_TRNS, \
+  KC_TRNS, LGUI(KC_Q), LGUI(KC_W), LGUI(KC_E), LGUI(KC_SPC), KC_TRNS,          \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_F11,     KC_TRNS,      KC_TRNS,          \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,      KC_TRNS,          \
+  KC_LALT, KC_TRNS,    KC_LGUI,    KC_TRNS,                                    \
   /* Right side */
-            KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_TRNS, KC_INS,  KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
-            KC_HOME, KC_LEFT, KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
-  KC_TRNS,  KC_DEL,  KC_TRNS, KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
+            KC_TRNS, KC_TRNS,      KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_TRNS,      KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_TRNS, KC_INS,       KC_UP,    KC_PGUP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    \
+            KC_HOME, KC_LEFT,      KC_DOWN,  KC_RIGHT, KC_END,  KC_TRNS, KC_TRNS,             \
+  KC_TRNS,  KC_DEL,  LSFT(KC_DEL), KC_TRNS,  KC_PGDN,  KC_TRNS,          KC_TRNS,             \
   KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,                    KC_TRNS,             \
   /* Number pad */
   KC_TRNS, KC_TRNS, KC_TRNS,          \
