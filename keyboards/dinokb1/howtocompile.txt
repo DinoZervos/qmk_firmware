@@ -1,0 +1,13 @@
+You need to run this on a mac
+* Have docker installed
+* From a terminal window navigate into the qmk folder
+* Enter this command to run the compiler (The first time will build the environment)
+util/docker_build.sh dinokb1
+
+To install firmware get the teensy loader application:
+https://www.pjrc.com/teensy/loader_mac.html
+
+* Drag the hex file (which is created in the root of the qmk folder) into the teensy loader
+* Press the reset button on the keyboard
+* Hit the curved arrow to load the eeprom with the new software
+* Hit the straight arrow to reboot the keyboard
