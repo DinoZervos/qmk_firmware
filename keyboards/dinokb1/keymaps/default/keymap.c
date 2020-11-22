@@ -22,6 +22,7 @@
 #define PROG  4 // Programming symbols
 #define MAC   5 // Mac layer
 #define MSFN  6 // Mac Space Fn
+#define MPRG  7 // Mac Programming symbols
 //#define VSWIN 4 // Window navigation/manipulation for Visual studio
 
 // enum custom_keycodes {
@@ -126,12 +127,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 [PROG] = LAYOUT( /* Programming Symbols */
   /* Left side */
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                            \
+  KC_TRNS, KC_TRNS,     KC_TRNS,     KC_TRNS, KC_TRNS,                   \
+  KC_TRNS, KC_TRNS,     KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+  KC_TRNS, RALT(KC_F4), RCTL(KC_F4), KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS,     KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS,     KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS,     KC_TRNS,     KC_TRNS,                            \
   /* Right side */
            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
@@ -192,6 +193,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS,          \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS  \
+),
+[MPRG] = LAYOUT( /* Mac Programming Symbols */
+  /* Left side */
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS,                   \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+  KC_TRNS, LGUI(KC_Q), LGUI(KC_W), KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS, KC_TRNS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,                            \
+  /* Right side */
+           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+           KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+           KC_TRNS, KC_TRNS, KC_LCBR, KC_RCBR, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, \
+           KC_TRNS, KC_TRNS, KC_LBRC, KC_RBRC, KC_TRNS, KC_BSLS, KC_TRNS,          \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,          \
+  KC_UNDS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,          \
+  /* Number pad */
+  KC_TRNS, KC_TRNS, KC_TRNS,           \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
+  KC_TRNS, KC_TRNS, KC_TRNS,           \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,  \
+  KC_TRNS, KC_TRNS, KC_TRNS,           \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS   \
 ),
 };
 
